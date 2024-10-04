@@ -1,0 +1,71 @@
+<!-- .)fexbox mai ya to hum apna element ko horizontal mai rakh sakta hai phir verticlly rakha sakta hao ..
+ [FLEX BOX MODEL]
+.)  flexbok is a one dimension layout method for  arranging items  rows and column. 
+.)hum element ka container ka andar rakta hai ..jis ka andar rakta hai usa bolta hai container aur jo andar rakta hai use bolta hai flex item 
+
+1.) [MAIN AXIX]= direction to the element arranging. jo elemetn cross axix ka sath ha usa bolta ha main size  ..
+2.) [CROSS AXIX]=90 degree to the main axix. aur jo main axix ka sath ha use bota ha cross sixe 
+
+             [PROPERTY] === [FLEXBOX DIRECTION]  
+  .) flex direction is the property used to define the direction of FLEX container.
+
+  1.) FLEX DIRECTION:row
+  2.)FLEX DIRECTION:row reverse
+  3.)FLEX DIRECTION:column
+  4.)FLEX DIRECTION:column reverse-->
+
+              <!-- [PROPERTY]=[FLEX ITEM] -->
+
+   <!-- .)CONTAINER ka  ander iteam ke  kitni bhe height ya width badha lo pr item container ka bhr nhi ja sakta itea shrinkho jata hai.. -->
+
+                            <!--  or   -->                    
+
+                    <!-- [PROPERTY]=[JUSTIFY CONTENT ].
+                   align flex iteam along the main axis.
+ 
+.1)FLEX START-iteam align to the start of the flex container.
+2.)FLEX END-iteam align to the end of the container.
+3.)CENTER- iteam are centerd within the flex container.
+4.)SPACE BETWEEN--
+5.)SPACE AROUND  !--- distribute iteam space between evenly.
+6.)SPACE EVENLY.-->          
+                              <!--   or  -->
+                       <!--   [PROPERTY]= [FLEXWRAP]
+ 1.)IS property mai hum dkta hai ke yadi iteam ke height aur weidth badhna se iteam sukad jata hai asha haimna upper property mai dkha  .. pr is property se iteam sukda ga nhi vo upper sse utar kr nich column mai a jayga   .     
+ .2) is propert ke waga se iteam sukda ga nhi vo nich line mai shift ho jayga yadi iteam ke width container ke width se jadya ha to  
+                                       OR
+                              [PROPERTY]=[ALIGN ITEAM]                   
+                align flex iteam alnog the [cross axis] which is perpindcular to the main axis.          
+             1.)    align-items:center; 
+             2.)align-items:start ;
+             3.)align-items:end;       -->       
+                             
+
+
+
+
+
+
+<!DOCTYPE html> 
+<html>
+<html lang="en">
+<head>
+    <title>FLEXBOX DIRECTION</title>
+    <link rel="stylesheet" href="FLEXBOX.css">
+</head>
+<body>
+    <h1 id="heading"> FLEX CONTAINER</h1>
+    <div id="container">
+        <div id="box1" class="box">flex box1</div>
+        <div id="box2" class="box">flex box2</div>
+        <div id="box3" class="box">flex box3</div>
+        <div id="box4" class="box">flex box4</div>
+
+        <div id="box4" class="box">flex box4</div>
+        <div id="box4" class="box">flex box4</div>
+        <div id="box4" class="box">flex box4</div>
+        <div id="box4" class="box">flex box4</div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- z index kuch asha  hota hai jsha mai ya video dkh raha hmm nich text hai aur upper sir ke video chl rahyi ha ek trah se order define hota ha isa bolta ha stacking order .
+ 2.)an index with a higher z index value apper to above others .
+ 3.) mtlb jo box jis ka kitna upper rehya usi z index value utni jadya rehygi.
+ 4.) only apply to elemetn only absolute , relative , fixed,sticky[ STATICS KA LIA NHI HAI]
+ 
+ 5.) NOTE= Dkhlo is case ma index 2 nindex 1 ka upper chad gya-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <title>z index</title>
+    <style>
+
+.box1,.box2 {
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+    position: absolute;
+}
+.box1{
+    background-color: aqua;
+    top: 60px;
+    left: 20px;
+    z-index: 1;
+}
+.box2{
+    background-color: brown;
+    top: 80px;
+    left:20px ;
+    z-index: 2;
+}
+
+    </style>
+ </head>
+ <body>
+    <div class ="box1">inddex1</div>
+    <div class ="box2">inddex2</div>
+ </body>
+ </html>

@@ -1,0 +1,34 @@
+<!-- 1.)facilitate dynamic sizing relative to root element..[ROOT ELEMENT HAI HELLO ] -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>REM relative unit</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 30px;/* body mtlb heello ka size 30 hai to second vala ka 0.5 mtlb [HELLO] se half ho jayga*/
+        }
+        #first{
+            background-color: blue;
+            height: 100px;
+            width: 200px;                   
+            font-size: 10px; 
+        }
+        #second{
+            background-color: violet;
+            width: 90px;
+            height: 60px;
+           font-size: 0.5rem;/* yadi yaha 2rem rakhu to  mera second vala ka size 30*2=60 ho jayga */
+        }
+    </style>
+</head>
+<body>
+    HELLO
+    <div id="first">
+        First;
+   <div id ="second">
+        second text is;
+   </div>
+</body>
+</html>

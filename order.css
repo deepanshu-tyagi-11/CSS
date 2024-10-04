@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#heading{
+    color:aquamarine;
+}
+#container{
+    color: black;
+    border: dashed black;
+    height:300px;
+    width: 680px;
+    background-color: cornsilk;
+    display:flex;/* is flex se iteam row wise arrange ho jata hai*/
+    justify-content: center;
+  
+      
+}
+.box{
+    height: 80px;
+    width: 80px;
+    border: 3px solid green;
+    margin: 5px;
+}
+#box1 {
+    background-color: blue;
+    order: 2;
+}
+
+#box2 {
+    background-color: coral;
+    order: 3;
+}
+
+#box3 {
+    background-color: yellow;
+    order: 4;
+    /*order 4 ka mtlb ha ke box three postion se hat kr fourth postion pa chla jayaga aur hama basically sabhi ka order define krna padyga tabhi change hoga */
+}
+
+#box4 {
+    background-color: tomato;
+    order: 1;
+}

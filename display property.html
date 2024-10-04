@@ -1,0 +1,38 @@
+<!-- 2.) INLINE ,block,& inline -block,NONE .. -->
+<!--1.) {BLOCK}. hum is question mai dkh rahya ha ke hamra second box next line mai ku aya first box ka aga ku nhi  print hua
+ 2.) aur yai bhe dkhi yadi bpox ek kai aga ek print kran ho to kya kra-->
+<!-- 2.) {INLINE} inline mtlb block ek kai aga ek print hoga.
+3.) {INLINE- BLOCK} mtlb block ek ka aga ek print hoga pr height width use kra ga. -->
+ 
+ <!DOCTYPE html> 
+<html lang="en">
+<head>
+    <title>display block & inline  </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+           
+            /* display: inline-block; */
+          /*  display: inline;*/
+        display: block;
+        }
+        #second{
+            visibility:hidden;/* visiblity hidden  llikhna se visiblity to chli jati hai pr vo space pura leta ha */
+            display:none ;/* yadi hama is space ko gayab krana ho to hum display none ka use krta hai display none lagna se visility jo space leti ho vo bhe gayab ho jata ha*/
+        }
+        
+    </style>
+</head>
+<body>
+    <div id ="first" class="box">FIRST</div>
+    <div id ="second" class="box">SECOND</div>
+    <div id ="third" class="box">THIRD</div>
+</body>
+</html>

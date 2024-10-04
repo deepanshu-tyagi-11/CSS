@@ -1,0 +1,21 @@
+
+    *{         
+        padding: 0;
+        margin: 0;
+       
+    }
+    
+        #pro1{
+         background-color: aqua; 
+         color: brown;
+         text-align: center;
+         text-transform:capitalize;
+         font-family: 'Times New Roman', Times, serif;
+        }
+        #outer{
+         font-size: 25px;
+        }
+        #iner{
+           font-size:  10px;
+        }
+ 

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#heading{
+    color:aquamarine;
+}
+#container{
+    color: black;
+    border: dashed black;
+    height:300px;
+    width: 550px;
+    background-color: cornsilk;
+    display:flex;/* is flex se iteam row wise arrange ho jata hai*/
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;   
+}
+.box{
+    height: 80px;
+    width: 100px;
+    border: 3px solid green;
+    margin: 5px;
+}
+#box1{
+    background-color: blue;
+}
+#box2{
+    background-color: coral;
+    align-self:flex-start;
+}
+#box3{
+    background-color: yellow;
+}
+#box4{
+    background-color: tomato;
+}

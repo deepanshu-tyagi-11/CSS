@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#heading{
+    color:aquamarine;
+}
+#container{
+    color: black;
+    border: dashed black;
+    height:300px;
+    width: 680px;
+    background-color: cornsilk;
+    display:flex;/* is flex se iteam row wise arrange ho jata hai*/
+    justify-content: center;
+  
+      
+}
+.box{
+    height: 80px;
+    width: 80px;
+    border: 3px solid green;
+    margin: 5px;
+    /* flex-grow: 1;yadi hum grow ko yaha define kraga to sara box puri container ke space cover kr lega */
+}
+#box1{
+    background-color: blue;
+}
+#box2{
+    background-color: coral;
+    flex-grow:1;  /*yadi hum grow ko yaha define kraga to bus 2nd vala box he bachi hui container ke space cover kraga aur .
+}
+#box3{
+    background-color: yellow;
+}
+#box4{
+    background-color: tomato;
+}

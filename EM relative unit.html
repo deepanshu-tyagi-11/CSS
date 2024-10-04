@@ -1,0 +1,35 @@
+<!-- 1.) yadi hama apna parent ka base pai ksi ka size define krna hoo to hum EM use krta hai -->
+ <!-- 2.)  jo bhe mera parent ka size ha us se relative mai apna  font size define kr sakta hmm. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EM relative unit</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #first{
+            background-color: blue;
+            height: 100px;
+            width: 200px;                      /* jo  hamra phla wala ka font size                 
+                               hai vo he hamra second vala ka ho jayga by default 30px*/
+            font-size: 30px; 
+        }
+        #second{
+            background-color: violet;
+            width: 90px;
+            height: 60px;
+           font-size: 0.5em;/*0.5 mtlb parent ka adha */
+        }
+    </style>
+</head>
+<body>
+    HELLO
+    <div id="first">
+        First;
+   <div id ="second">
+        second;
+   </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!--1.) Statics{DEFAUKT}=  element flow the normal documentation  top, right, botton left they dont work in this case .
+2.) RELATIVE = element ke position ko hata deta ha THODA SA JHA MAI PAINT HONA Vala tha normal. 
+3.)ABSOLUTE= element ke position ko hata deta ha hai UPPER page ke CORNER SE JITNA BHE DIATANCE DETA HAI UTNA HATA DETA HA.
+4.)FIXED= ek ttraha se fixed mai vo content se bhr he a jata ha .example jsha hum ksi ke comment scrol kr rahya hai aur upper video fixed chl rahyi ha isi trha se fixed kam krta hai.
+<!DOCTYPE html>-->
+
+<html lang="en">
+<head>
+    <title>position property</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+        }
+        #box1{
+position:static;
+        }
+        
+        #box2{
+position: relative;
+top: 5px;/*mtlb top se 10px nicha*/
+left: 40px;/*mtlb left se 40px durr*/
+        }
+
+        #box3{
+position:absolute;/* ek traha se screen se ek level  upper mtlb bhr a  jata ha aur phir yahi tika reta hai pr scroll ho jata hai*/
+top: 10px;
+        }
+
+        #box4{
+ position: fixed;/*k traha se screen se ek level  upper mtlb bhr a  jata ha aur phir yahi tika reta hai pr scroll [NHI] hota hai*/ */
+right: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">box1</div>
+    <div id="box2" class="box">box2</div>
+    <div id="box3" class="box">box3</div>
+    <div id="box4" class="box">box4</div>
+    <div class="box" >box</div>
+    <div class="box" >box</div>
+    <div class="box" >box</div>
+    <div class="box" >box</div>
+    <div class="box" >box</div>
+    <div class="box" >box</div>
+</body>
+</html>
