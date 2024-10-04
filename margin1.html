@@ -1,0 +1,32 @@
+<!-- PADDING -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>margin</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+          
+        }
+        .padded{
+            height: 50px;
+            width: 50px;
+            padding: 2px;
+        }
+         /* NOTE ek exception yai hai ke margin jo hai vo  doo item  mtlb first or second iteam ka beach ka gap hai yadi dono text mai se jis ka [gap] jadya hoyga usi ka voo assume kr lega aur durs vala ko neglate kr dega */
+           #first{  
+            background-color:aqua;
+            margin: 10px 50px 10px 50px ;
+            }
+            #second{  
+            background-color: rgb(33, 206, 102);
+            margin: 10px 50px 10px 50px ;
+            }
+    </style>
+</head>
+<body>
+    <div id="first" class="padded">hello beta</div>
+    <div id="second" class="padded">hello dosto</div>
+</body>
+</html>

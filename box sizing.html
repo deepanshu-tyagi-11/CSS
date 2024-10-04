@@ -1,0 +1,46 @@
+<!-- property of border id BOX SIZING -->
+ <!-- 1.) ho sakta ha border aur paddding likhna se hamri box ke size badh gyi hoo.
+ 2.)to hum kya krta hai hum border aur padding ko asha he rehn adeta ha aur content ke sizze kam kr leta ha.
+ 3.) aur jo mai height aur weidth define krta hmm vo hamri content ke nhi hoti vo hamri pura  box ke hoti ha.aur dkta hai ke vo conteent ka around bnayga ga ya border ka around bnaga ga box.
+ 4.) aur box ke value by default { CONTENT BOX }hoti ha.. -->
+ <!-- 4.)box sizing lagna sa box apna size apna hisab sse chnage kr leta hai. -->
+
+ !DOCTYPE html>
+ <html lang="en">
+ <head>
+     <title>margin</title>
+     <style>
+         *{
+             margin: 0;
+             padding: 0;
+           
+         }
+         .padded{
+             height: 50px;
+             width: 50px;
+             padding: 2px;
+             margin: 5px ;
+             box-sizing: border-box;/* border box ka mtbl ha ke jo hamri heght aur  weuidht ha vo border ka bhar tuk honi chyia aur content ke value isa hisab se choti ya badi kr dega*/
+             /*box-sizing: content-box;*//* content box se koi fara nhi padyga */
+             /* content box ka mtlb ha ke jo hamra box bnayga vo hamra content ka andar bnayaga*/
+         }
+         
+ 
+         #second{  
+             background-color:aqua;
+             border: 10px ;
+            border-radius: 10px;
+         }
+          
+            #first{  
+             background-color:blue;
+             border: 10px dotted rebeccapurple; 
+             }
+            
+     </style>
+ </head>
+ <body>
+     <div id="first" class="padded">hello beta</div>
+     <div id="second" class="padded">hello dosto</div>
+ </body>
+ </html>

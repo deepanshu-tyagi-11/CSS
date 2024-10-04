@@ -1,0 +1,40 @@
+<!-- border & property of border-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>margin</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+          
+        }
+        .padded{
+            height: 50px;
+            width: 50px;
+            padding: 2px;
+            margin: 5px ;
+        }
+        /* }                          Content ka andar border padding sub ke dimensuon count hoti hai prr MARGIN ke nhi hoti */
+
+        #second{  
+            background-color:aqua;
+            border: 10px ;
+           border-radius: 10px;
+        }/* use to create rounnded corners of content*/
+           /* border-radius : 1px 2px 3px 4px* alag alag content ke side ka alga alga border bhe define kr sakta hai asha /
+            }*/
+         
+           #first{  
+            background-color:blue;
+            border: 10px dotted rebeccapurple; /*bodder likhna kai bad hum border ka ddesign change kr sakta hai */
+           
+            }
+           
+    </style>
+</head>
+<body>
+    <div id="first" class="padded">hello beta</div>
+    <div id="second" class="padded">hello dosto</div>
+</body>
+</html>
