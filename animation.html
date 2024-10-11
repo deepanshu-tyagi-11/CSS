@@ -1,0 +1,61 @@
+<!-- SYNTAX= @keyframe animation-name rakhna hai{
+    from{
+    css code 
+    }
+    to{
+        css code 
+    }
+}
+            [ANIMATION PROPERTY]
+            .)animation name = specify the name of the @keyframe define animation. 
+            .)animation duration= define the total time the animation takes to complete one cycle.
+            .)animstion-timing-function= control the pacing of the animation( ease-in-case).
+            .)animation delay= sets a adelay before the animation start allowing for a pause before initation. -->
+
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>animation</title>
+</head>
+  <style>
+    #animate{
+        height: 80px;
+        width: 80px;
+        background-color: darkcyan;
+        border: 2px solid red;
+        position: relative;
+        border-radius: 20px;
+        text-align: center;
+         top:10px;
+        left:20px;
+
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-name: ghummakad;
+        animation-delay: 0s; 
+
+        animation-iteration-count: infinite;/* issa hum dkh sakta hai ke property ksha chlani hai*/
+       animation-direction:normal;/*issa hum dkta hai ke property kis direction mai chalti hai */
+        /* animation: ghummakad 1s ease-in-out 0s infinite reverse ; */
+    }
+/* @keyframes ghummakad {
+from{left:1opx}
+/*yha pa haimna apni animation syntax likha dia aur ab upper property define kr dega ke kya kya animationhona chyia
+to{left:500px} */
+@keyframes ghummakad {
+    0%{left:40px;}/* ya from hai*/
+/* 60%{left :20px} */
+60%{left:200;top:300px} /* iska mtlb hai 60% time pai box 200pixel left chla gay aur 300px down */
+/*[from se to] ka beach mai hum apna hisab se animation ko divide kr sakta hai aur  kuch bhe property define kr sakta hai */
+
+    100%{left:400px;}/*ya too hai*/
+
+
+        
+    }
+        </style>
+        <body>
+<div id ="animate">animation</div>
+        </body>
+        </html>
+        
