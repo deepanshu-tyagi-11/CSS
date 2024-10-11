@@ -3,13 +3,14 @@
     padding:0px;
 }
 nav{
-    margin-left:50px;
-    text-decoration:none;
-    padding:5px;
+    margin-left:350px;
+   
+    padding:10px;
 }
 header{
     background-color: aqua;
-    height: 20px;
+    height:30px;
+    text-decoration:none;
 }
 #third{
     height: 20px;
