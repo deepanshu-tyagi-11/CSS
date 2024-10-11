@@ -1,0 +1,35 @@
+<!-- 1.) used to define special state of html element.
+2.)example= hover :active: first child;
+3.) target element based on their position or user action.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>pseudo class</title>
+    <style>
+        #pseudo-class{
+            height: 20px;
+            width: 100px;
+            background-color: aquamarine;
+            border: 2px salmon;
+            border-radius: 5px;
+            transition-duration: 3s;/*mtlb 3 second ka andar chmage hoga*/
+            transition-delay: 3s;/* delay mtlb second bad change hoga*/
+            transition-timing-function:steps(4);
+
+        }
+        #pseudo-class:hover{/* hover use krta ha jub hum ksi cheej pa apna cursor la jata ha to iski property change ho jati hai*/
+            background-color: rgb(227, 94, 156);
+            height: 30px;
+            width: 50px;
+        }
+        #pseudo-class:active{/*active hum jub use krta hai jub hum ksi cheej pa click krta hai*/
+            background-color: rgb(51, 166, 68);
+
+        }
+    </style>
+</head>
+<body>
+<div id="pseudo-class"> CLICK</div>
+    
+</body>
+</html>

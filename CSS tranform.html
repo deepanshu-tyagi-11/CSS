@@ -1,0 +1,61 @@
+<!-- 1.) all modification of element shape and position.
+2.)can perform operation like rotate, scale, skew and,translate..
+3.)does not effect the layout of surronding element.
+4.) used to  create visula effect like 3D space tranformation.
+5.)implemented with function like rotate(),scale(),& translate();  -->
+                            <!-- [ROTATE] -->
+                             <!-- .) rotate an element around a fix point.
+                             .) DEFINE USING THE ROTATE() FUNCTION WITHIN THE TRANSFORM PROPERTY.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css tranform</title>
+    <style>
+    #transform{
+        height: 80px;
+        width: 80px;
+        background-color: darkcyan;
+        border: 2px solid red;
+        position: relative;
+        border-radius: 20px;
+        text-align: center;
+       /* transform: rotate(45deg); */
+         top:100px;
+        left:200px;
+    }
+    #transform:hover{
+        /* transform: rotate(270deg); */
+        background-color: yellow;
+        transition: all 3s ease-in;
+        transform: rotatex(270deg);
+        /* transform: rotatey(270deg); *//* x or y lagan se hum box ko 3D mai bhe move kr sakta hai*/
+    }
+    </style>
+</head>
+<body>
+    <div id = "transform"> box</div>
+</body>
+</html>
+                                    <!-- [SCALE] -->
+                 <!-- .) scale bhe same ha rotate ke traha bss hum isma ksi ka sixe chota bada kr sakta hai.
+                  .) mtlb zome kr sakta hai.
+                  .) ya property upper code mai apply kr ka dkh sakta hoo. -->
+                
+                         <!-- transform: scale(2);
+                         transform: scalex(2); 
+                         transform: scalex(2);  -->
+
+                                       <!-- [TANSLATE] -->
+
+                <!-- .) translate se hum apna box ko ksi bhe direction mai move kr sakta hai.
+
+                .)example=transform :translate(50px)  || is se hum apna box ko 50degree move kr sakta hai right mai..
+                .)transform :translate(50px 50px)     || is se hum apna box ko 50 degree x mai aur 50 degree y direction mai move kr sakta ha.
+                .)ransform :translatex(50px)          || is hum bss x direction mai move kr sakta haa.
+                .)ransform :translatey(50px)          || is se hum y direction mai move kr sakta hai.. -->
+
+
+                                                 <!-- [SKEW] -->
+                                                  <!-- .)skew ke madadse hum apni picute ko pichka sakta hai. 
+                                                  .) transform:skew(50deg);
+                                                  .)transform:skew(180deg); -->
