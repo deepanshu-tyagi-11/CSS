@@ -1,0 +1,35 @@
+<!-- 1.) use to define responsive web designe.
+2.) apply style based on condition like screen size.
+[SYNTAX]= @MEDIA (condition){CSS RULE}{
+CONTAINER{.
+//write style here
+}
+}
+3.) HAMRI CSS JO HA VO KSIHI BHE SCREEN SIZE PA ACCHA SE DIKHA ISLYIA MEDIA QUERY USE KRT HMM..
+4.) media query use krta ha screen size ka lia 
+5.) basically media query hum width pa he lagat  ha jadya tarr kuki lenght aur height to scroable hoti hai
+6.) hum width ka jadya use nhi krta[MIN-WIDTH & MAX -WIDTH] ka krta hai-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>media query</title>
+
+    <style>
+      @media screen and (width: 300px) {
+        .box {
+          background-color: brown;
+        }
+      }
+
+      .box {
+        background-color: aqua;
+        height: 100Px;
+        width: 100px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">REKHA</div>
+  </body>
+</html>
